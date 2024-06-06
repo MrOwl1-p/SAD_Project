@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Customer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .icon{
+            width: 50px;
+            margin-right: 20px;
+        }
+
+        .navbar {
+            background-color: #333;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        .navbar img {
+            width: 50px;
+            margin-right: 20px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .content {
+            padding: 20px;
+        }
+        .header {
+            background-color: #ff5722;
+            padding: 10px;
+            color: white;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .form-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 400px;
+            margin: 0 auto;
+        }
+        .form-group {
+            margin-bottom: 20px;
+            padding: auto;
+        }
+        .form-group input {
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #e0e0e0;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <img src="LogoP.png"" alt="Logo">
+        <a href="#">Search Book</a>
+        <a href="#">Rent Book</a>
+        <a href="#">Return Book</a>
+        <a href="#">Rent Detail</a>
+    </div>
+    <div class="content">
+        <div class="header">
+           Payment Method
+        </div>
+        <div class="form-container">
+            <div class="payment-option">
+                <h2>PAYMENT METHOD</h2>
+                <input type="radio" name="payment" id="visa" >
+                <img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Visa_Logo.png/640px-Visa_Logo.png" alt="Visa" >
+                <label for="visa">DEBIT CARD</label>
+              </div>
+          
+              <div class="payment-option">
+                <input type="radio" name="payment" id="fpx">
+                <img class="icon" src="https://www.bankislam.com/wp-content/uploads/FPX-Logo.jpg" alt="FPX">
+                <label for="fpx">FPX</label>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

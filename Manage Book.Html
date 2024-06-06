@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Book Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .navbar {
+            background-color: #333;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        .navbar img {
+            width: 50px;
+            margin-right: 20px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .content {
+            padding: 20px;
+        }
+        .header {
+            background-color: #ff5722;
+            padding: 10px;
+            color: white;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .book-list {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .book {
+            display: flex;
+            justify-content: space-between;
+            background-color: #e0e0e0;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .book button {
+            margin-left: 10px;
+        }
+        .add-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <img src="LogoP.png" alt="Logo">
+        <a href="#">Customer Details</a>
+        <a href="#">Books Details</a>
+        <a href="#">Rentals Details</a>
+    </div>
+    <div class="content">
+        <div class="header">
+            Manage Book Details
+        </div>
+        <div class="book-list">
+            <div class="book">
+                <span>Book 1</span>
+                <div>
+                    <button>Edit</button>
+                    <button style="background-color: red; color: white;">Delete</button>
+                    <input type="checkbox" style="background-color: red; color: white;"> Returned</button>
+                </div>
+            </div>
+            <div class="book">
+                <span>Book 2</span>
+                <div>
+                    <button>Edit</button>
+                    <button style="background-color: red; color: white;">Delete</button>
+                    <input type="checkbox" style="background-color: red; color: white;"> Returned</button>
+                </div>
+            </div>
+        </div>
+        <a href="Add Book.html" class="add-button">Add</a>
+    </div>
+</body>
+</html>
