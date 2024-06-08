@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manage Customer Details</title>
+    <title>Add Rental</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -37,61 +37,60 @@
             font-size: 18px;
             margin-bottom: 20px;
         }
-        .customer-list {
+        .form-container {
             background-color: white;
             padding: 20px;
             border-radius: 10px;
+            width: 400px;
+            margin: 0 auto;
         }
-        .customer {
-            display: flex;
-            justify-content: space-between;
-            background-color: #e0e0e0;
-            margin-bottom: 10px;
-            padding: 10px;
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group input {
+            width: 100%;
+            border: 1px solid #ccc;
             border-radius: 5px;
-        }
-        .customer button {
-            margin-left: 10px;
+            background-color: #e0e0e0;
         }
         .add-button {
             display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
+            padding: 4.5px;
             background-color: #333;
             color: white;
+            text-align: center;
             text-decoration: none;
             border-radius: 5px;
+            text-align: center;
+            width: 100%;
         }
     </style>
 </head>
 <body>
     <div class="navbar">
-        <img src="LogoP.png" alt="Logo">
+        <img src="LogoP.png" href="./MainMenu.html" >
         <a href="./Manage User.html">Customer Details</a>
         <a href="#">Books Details</a>
         <a href="./Manage Rental.Html">Rentals Details</a>
+        <a href="#">Report</a>
+
     </div>
     <div class="content">
         <div class="header">
-            Manage Customer Details
+            Add Rental Information
         </div>
-        <div class="customer-list">
-            <div class="customer">
-                <span>Customer 1</span>
-                <div>
-                    <button>Edit</button>
-                    <button style="background-color: red; color: white;">Delete</button>
-                </div>
+        <div class="form-container">
+            <div class="form-group">
+                <input type="text" placeholder="Rental ID">
             </div>
-            <div class="customer">
-                <span>Customer 2</span>
-                <div>
-                    <button>Edit</button>
-                    <button style="background-color: red; color: white;">Delete</button>
-                </div>
+            <div class="form-group">
+                <input type="text" placeholder="Rental Return Date">
             </div>
+            <div class="form-group">
+                <input type="text" placeholder="Rental Rent Date">
+            </div>
+            <a href="" class="add-button">Add</a>
         </div>
-        <a href="Add User.html" class="add-button">Add</a>
     </div>
 </body>
 </html>

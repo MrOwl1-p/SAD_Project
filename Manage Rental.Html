@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manage Book Details</title>
+    <title>Manage Rentals Details</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -37,12 +37,12 @@
             font-size: 18px;
             margin-bottom: 20px;
         }
-        .book-list {
+        .Rental-list {
             background-color: white;
             padding: 20px;
             border-radius: 10px;
         }
-        .book {
+        .Rental {
             display: flex;
             justify-content: space-between;
             background-color: #e0e0e0;
@@ -50,7 +50,7 @@
             padding: 10px;
             border-radius: 5px;
         }
-        .book button {
+        .Rental button {
             margin-left: 10px;
         }
         .add-button {
@@ -67,25 +67,26 @@
 <body>
     <div class="navbar">
         <img src="LogoP.png" alt="Logo">
-        <a href="#">Customer Details</a>
-        <a href="#">Books Details</a>
-        <a href="#">Rentals Details</a>
+        <a href="./Manage User.html">Customer Details</a>
+        <a href="#">Book Details</a>
+        <a href="./Manage Rental.Html">Rentals Details</a>
+        <a href="#">Report</a>
     </div>
     <div class="content">
         <div class="header">
-            Manage Book Details
+            Manage Rentals Details
         </div>
-        <div class="book-list">
-            <div class="book">
-                <span>Book 1</span>
+        <div class="Rental-list">
+            <div class="Rental">
+                <span>Rental 1</span>
                 <div>
                     <button>Edit</button>
                     <button style="background-color: red; color: white;">Delete</button>
                     <input type="checkbox" style="background-color: red; color: white;"> Returned</button>
                 </div>
             </div>
-            <div class="book">
-                <span>Book 2</span>
+            <div class="Rental">
+                <span>Rental 2</span>
                 <div>
                     <button>Edit</button>
                     <button style="background-color: red; color: white;">Delete</button>
@@ -93,7 +94,7 @@
                 </div>
             </div>
         </div>
-        <a href="Add Book.html" class="add-button">Add</a>
+        <a href="Add Rental.html" class="add-button">Add</a>
     </div>
 </body>
 </html>
